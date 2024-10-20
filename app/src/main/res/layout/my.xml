@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rowCount="5"
+        android:columnCount="4"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Row 1 -->
+        <Button
+            android:text="7"
+            android:id="@+id/button7"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="8"
+            android:id="@+id/button8"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="9"
+            android:id="@+id/button9"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="/"
+            android:id="@+id/buttonDivide"
+            style="@style/CalcButton"/>
+
+        <!-- Row 2 -->
+        <Button
+            android:text="4"
+            android:id="@+id/button4"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="5"
+            android:id="@+id/button5"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="6"
+            android:id="@+id/button6"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="*"
+            android:id="@+id/buttonMultiply"
+            style="@style/CalcButton"/>
+
+        <!-- Row 3 -->
+        <Button
+            android:text="1"
+            android:id="@+id/button1"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="2"
+            android:id="@+id/button2"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="3"
+            android:id="@+id/button3"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="-"
+            android:id="@+id/buttonSubtract"
+            style="@style/CalcButton"/>
+
+        <!-- Row 4 -->
+        <Button
+            android:text="0"
+            android:id="@+id/button0"
+            style="@style/CalcButton"
+            android:layout_columnSpan="2"/>
+        <Button
+            android:text="."
+            android:id="@+id/buttonDecimal"
+            style="@style/CalcButton"/>
+        <Button
+            android:text="+"
+            android:id="@+id/buttonAdd"
+            style="@style/CalcButton"/>
+
+        <!-- Row 5 -->
+        <Button
+            android:text="CLEAR"
+            android:id="@+id/buttonClear"
+            style="@style/CalcButton"
+            android:layout_columnSpan="3"/>
+        <Button
+            android:text="="
+            android:id="@+id/buttonEquals"
+            style="@style/CalcButton"/>
+    </GridLayout>
+
+    <!-- Styles can be defined in a separate file, but for simplicity, they're included here -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/SpaceStation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Flights"
+        android:src="@drawable/space_station_icon"/>
+    <ImageView
+        android:id="@+id/Flights"
+        app:layout_constraintLeft_toRightOf="@+id/SpaceStation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Rovers"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rocket_icon"/>
+    <ImageView
+        android:id="@+id/Rovers"
+        app:layout_constraintLeft_toRightOf="@id/Flights"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rover_icon"/>
+    <TextView
+        android:id="@+id/SpaceStationText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpaceStation"
+        app:layout_constraintRight_toLeftOf="@+id/FlightsText"
+        android:text="Space Station"
+        />
+    <TextView
+        android:id="@+id/FlightsText"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Flights"
+        app:layout_constraintLeft_toRightOf="@+id/SpaceStationText"
+        app:layout_constraintRight_toLeftOf="@+id/RoversText"
+        android:text="Flights"
+        />
+    <TextView
+        android:id="@+id/RoversText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Rovers"
+        app:layout_constraintLeft_toRightOf="@+id/FlightsText"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Flights"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/DCA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="DCA"
+        android:textColor="#616161"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/double_arrows"
+        app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <ImageView
+        android:id="@+id/double_arrows"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/double_arrows"
+        app:layout_constraintLeft_toRightOf="@id/DCA"
+        app:layout_constraintRight_toLeftOf="@+id/MARS"
+        app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <TextView
+        android:id="@+id/MARS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="MARS"
+        android:textColor="#616161"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/double_arrows"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="One Way"
+        android:textColor="#3E2723"
+        app:layout_constraintBottom_toTopOf="@+id/traveller"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        tools:layout_editor_absoluteX="23dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/traveller"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="1 Traveller"
+        android:textColor="#3E2723"
+
+        app:layout_constraintTop_toBottomOf="@id/switch1"
+        tools:layout_editor_absoluteX="23dp"
+        tools:ignore="MissingConstraints" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <ImageView
+        android:id="@+id/galaxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/galaxy"
+        app:layout_constraintTop_toBottomOf="@+id/double_arrows"
+        tools:layout_editor_absoluteX="159dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/rocket"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/rocket_icon"
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@+id/galaxy"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="DEPART"
+        android:textColor="#616161"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

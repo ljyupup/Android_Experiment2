@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:background="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" TableLayout"
+            android:background="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                                                            "
+            android:background="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                                                   "
+            android:background="#101010"/>
+
+    </LinearLayout>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="open..." />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Ctrl-O" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Save..." />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Ctrl-S" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Save As..." />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Ctrl-Shift-S" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="X" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Import" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="X" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Export" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Ctrl-E" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="Quit" />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text=" " />
+
+    </TableRow>
+</TableLayout>
